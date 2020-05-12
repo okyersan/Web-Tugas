@@ -46,6 +46,11 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'siswa' => [
+            'driver' => 'jwt',
+            'provider' => 'siswa',
+        ]
     ],
 
     /*
@@ -71,10 +76,10 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'siswa' => [
+            'driver' => 'eloquent',
+            'model' => App\Siswa::class,
+        ],
     ],
 
     /*
